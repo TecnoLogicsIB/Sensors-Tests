@@ -22,7 +22,7 @@ void loop()
 
   float Tensio = DadaSensor * (5.0 / 1024.0); // recupera la tensió
 
-  float DensitatPols = 0.17 * Tensio - 0.1;  // linear eqaution taken from http://www.howmuchsnow.com/arduino/airquality/
+  float DensitatPols = 0.17 * Tensio - 0.1;  // relació lineal presa de http://www.howmuchsnow.com/arduino/airquality/
 
   Serial.print("Valor del senyal (0-1023): ");
   Serial.print(DadaSensor);
